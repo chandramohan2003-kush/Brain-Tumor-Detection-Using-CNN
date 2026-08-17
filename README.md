@@ -43,13 +43,6 @@ The project provides a comprehensive benchmark comparing classical machine learn
 ---
 
 ## Models Trained
-
-### 1. Classical Machine Learning Pipeline
-* **Logistic Regression**
-* **Random Forest Classifier**
-* **Support Vector Machine (SVM)**
-
-### 2. Deep Learning & Transfer Learning Architectures
 * **CNN**
 * **VGG16**
 * **ResNet50**
