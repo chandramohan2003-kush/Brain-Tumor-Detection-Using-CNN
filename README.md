@@ -38,9 +38,6 @@ The project provides a comprehensive benchmark comparing classical machine learn
 ## Image Preprocessing & Feature Engineering
 * **Skull Stripping:** Implemented Otsu automated thresholding combined with largest-contour extraction to remove non-brain tissues, skull artifacts, and background noise.
 * **Contrast Enhancement (CLAHE):** Applied Contrast Limited Adaptive Histogram Equalization to normalize illumination and improve tumor boundary visibility in low-contrast regions.
-* **Texture Descriptors (GLCM):** Extracted multi-distance (1, 3, 5) and multi-angle (0°, 45°, 90°, 135°) Gray-Level Co-occurrence Matrix properties, deriving 72 statistical features including contrast, dissimilarity, homogeneity, energy, correlation, and angular second moment.
-* **Frequency-Domain Features (2D-DWT):** Decomposed images via 2D Discrete Wavelet Transform (Haar wavelet) into approximation and detailed sub-bands (LL, LH, HL, HH), extracting 16 energy and Shannon entropy descriptors.
-* **Edge & Gradient Features (HOG):** Extracted Histogram of Oriented Gradients to capture boundary contours and spatial gradient orientation.
 * **Dimensionality Reduction:** Built a leak-free scikit-learn pipeline using `StandardScaler` followed by `Principal Component Analysis (PCA)` retaining 95% of the total cumulative variance.
 
 ---
@@ -53,9 +50,10 @@ The project provides a comprehensive benchmark comparing classical machine learn
 * **Support Vector Machine (SVM)**
 
 ### 2. Deep Learning & Transfer Learning Architectures
-* **VGG16 + Custom CNN Classification Head**
-* **ResNet50 + Custom CNN Classification Head**
-* **EfficientNet-B0 + Custom CNN Classification Head**
+* **CNN**
+* **VGG16**
+* **ResNet50**
+* **EfficientNet-B0**
 
 ---
 
